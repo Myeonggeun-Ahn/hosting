@@ -87,25 +87,56 @@ ul {
     color: #333;
 }
 
-.menu1:hover {
-  color: blue;
+.menu1 {
+  transition: transform 0.1s ease-in-out;
+  display: inline-block;
 }
 
+.menu1:hover {
+  color: blue;
+  transform: scale(1.05);
+}
+
+.menu2 {
+  transition: transform 0.1s ease-in-out;
+  display: inline-block;
+}
 
 .menu2:hover {
   color: blue;
+  transform: scale(1.05);
+}
+
+.menu3 {
+  transition: transform 0.1s ease-in-out;
+  display: inline-block;
 }
 
 .menu3:hover {
   color: blue;
+  transform: scale(1.05);
+
+}
+
+.menu4 {
+  transition: transform 0.1s ease-in-out;
+  display: inline-block;
 }
 
 .menu4:hover {
   color: blue;
+  transform: scale(1.05);
 }
+
+.menu5 {
+  transition: transform 0.1s ease-in-out;
+  display: inline-block;
+}
+
 
 .menu5:hover {
   color: blue;
+  transform: scale(1.05);
 }
 
 .user-links a {
