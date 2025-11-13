@@ -320,3 +320,266 @@ ul {
     color: #777;
     font-size: 14px;
 }
+
+/* --- ranking page --- */
+
+/* 메인 콘텐츠 영역 (모든 서브페이지에 적용) */
+.page-container {
+    max-width: 1100px; /* index의 콘텐츠 폭과 맞추는 것이 좋습니다 */
+    margin: 0 auto;
+    padding: 70px 40px; /* 페이지 상하 여백 */
+    min-height: 60vh; /* 콘텐츠가 적어도 최소 높이를 갖도록 함 */
+}
+
+/* 페이지 공통 큰 제목 */
+.page-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+/* 페이지 공통 서브 제목 */
+.page-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+/* --- '소개'/'포인트' 페이지용 콘텐츠 박스 --- */
+.content-box {
+    background-color: #fcfcfc;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px 35px;
+    margin-bottom: 30px;
+}
+
+.content-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.content-box p, .content-box li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.content-box ul {
+    list-style: disc; /* 불릿 스타일 */
+    padding-left: 20px;
+}
+
+/* --- '작은 실천' 페이지용 카드 --- */
+.action-grid {
+    display: grid;
+    /* 3열 그리드, 창이 좁아지면 2열 또는 1열로 변경 (반응형) */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.action-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.action-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.action-card .card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.action-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.action-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    flex-grow: 1; /* p태그가 남은 공간 차지 */
+}
+
+.action-card .card-points {
+    font-size: 18px;
+    font-weight: 700;
+    color: #d9534f; /* 메인페이지 버튼 색상과 통일 */
+}
+
+/* --- '실천 랭킹' 페이지용 테이블 --- */
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse; /* 테두리 한 줄로 */
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* 둥근 모서리 적용 */
+}
+
+.ranking-table th, .ranking-table td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ranking-table th {
+    background-color: #f9f9f9;
+    font-weight: 700;
+    color: #333;
+}
+
+.ranking-table tr:last-child td {
+    border-bottom: none; /* 마지막 줄 밑줄 제거 */
+}
+
+.ranking-table td:nth-child(2) { /* 닉네임 */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.ranking-table td:first-child { /* 순위 */
+    width: 10%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #dd5045;
+}
+
+
+/* --- '즉석 상담' 페이지용 링크 버튼 --- */
+.counseling-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.counseling-link-button {
+    display: block;
+    padding: 25px 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.counseling-link-button:hover {
+    background-color: #fff;
+    border-color: #c0c0c0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.counseling-link-button h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.counseling-link-button p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+/* 티어 필터 탭 네비게이션 */
+.tier-nav {
+    display: flex;
+    flex-wrap: wrap; /* 창이 좁아지면 줄바꿈 */
+    gap: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+.tier-tab {
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tier-tab:hover {
+    background-color: #e0e0e0;
+}
+
+/* 활성화된 탭 스타일 (index.html의 버튼 색상과 통일) */
+.tier-tab.active {
+    background-color: #dd5045;
+    color: #ffffff;
+}
+
+/* 새로운 랭킹 리스트 */
+.ranking-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.tier-badge {
+    font-size: 15px;
+    font-weight: 800;
+    color: #333;
+    padding: 4px 10px;
+    border-radius: 5px;
+    width: 180px;
+    text-align: left;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #ddd;
+}
+
+/* 티어 아이콘 스타일 */
+.tier-icon {
+    width: 40px; /* 아이콘 크기 */
+    height: 40px;
+    vertical-align: middle; /* 텍스트와 세로 정렬 */
+}
+
+.tier-room { background-color: #ECEFF1; border-color: #B0BEC5; } 
+.tier-door { background-color: #FBE9E7; border-color: #D7CCC8; }
+.tier-step { background-color: #E8F5E9; border-color: #A5D6A7; }
+.tier-walk { background-color: #E3F2FD; border-color: #90CAF9; }
+.tier-reconnect { background-color: #FFFDE7; border-color: #FFEB3B; } 
+.tier-stood_up { background-color: #E0F2F7; border-color: #81D4FA; }
