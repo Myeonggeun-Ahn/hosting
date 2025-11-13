@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduce - 부산외뚜기</title>
+  <title>실천 랭킹 - 부산외뚜기</title>
+  <link rel="icon" href="images/favicon_v1.ico" />
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="main-header">
     <div class="header-container">
@@ -19,7 +22,7 @@
         <ul>
           <li><a href="introduce.html" class="menu1">소개</a></li>
           <li><a href="practice.html" class="menu2">작은 실천</a></li>
-          <li><a href="point.html" class="menu3">실천 포인트</a></li>
+          <li><a href="./store.html" class="menu3">포인트 상점</a></li>
           <li><a href="ranking.html" class="menu4">실천 랭킹</a></li>
           <li><a href="advice.html" class="menu5">즉석 상담</a></li>
         </ul>
@@ -33,119 +36,207 @@
 
   <main>
     <div class="page-container">
-        <h1 class="page-title">이달의 실천 랭킹</h1>
-        <p class="page-subtitle">
-            함께하는 외뚜기들을 응원해주세요!
-        </p>
+      <h1 class="page-title">외뚜기의 여정</h1>
+      <p class="page-subtitle">
+        '작은 실천'으로 포인트를 모아, 자신만의 여정을 나아가보세요!
+      </p>
 
-        <nav class="tier-nav">
-            <button class="tier-tab active" data-tier="all">전체</button>
-            <button class="tier-tab" data-tier="stood_up">다시 일어선 외뚜기</button>
-            <button class="tier-tab" data-tier="reconnect">다시 만난 외뚜기</button>
-            <button class="tier-tab" data-tier="walk">산책하는 외뚜기</button>
-            <button class="tier-tab" data-tier="step">한 걸음 외뚜기</button>
-            <button class="tier-tab" data-tier="door">문 앞의 외뚜기</button>
-            <button class="tier-tab" data-tier="room">방 안의 외뚜기</button>
-        </nav>
+      <section class="top-rank-showcase">
+        <div class="rank-card rank-1">
+          <div class="rank-badge">1위</div>
+          <img src="images/Re_StandUp.png" alt="1위 아이콘" class="rank-profile-img">
+          <h3 class="rank-username">불사조외뚜기</h3>
+          <div class="rank-stats">
+            <span class="rank-points">8,500 P</span>
+            <span class="rank-tier-name">다시 일어선</span>
+          </div>
+        </div>
+        <div class="rank-card rank-2">
+          <div class="rank-badge">2위</div>
+          <img src="images/Meet_again.png" alt="2위 아이콘" class="rank-profile-img">
+          <h3 class="rank-username">다시일어서는중</h3>
+          <div class="rank-stats">
+            <span class="rank-points">3,850 P</span>
+            <span class="rank-tier-name">다시 만난</span>
+          </div>
+        </div>
+        <div class="rank-card rank-3">
+          <div class="rank-badge">3위</div>
+          <img src="images/Walking.png" alt="3위 아이콘" class="rank-profile-img">
+          <h3 class="rank-username">따뜻한햇살</h3>
+          <div class="rank-stats">
+            <span class="rank-points">2,920 P</span>
+            <span class="rank-tier-name">산책하는</span>
+          </div>
+        </div>
+      </section>
 
-        <ul class="ranking-list">
-            <li class="ranking-item" data-tier="stood_up">
-                <span class="rank-num">1</span>
-                <span class="tier-badge tier-stood_up">
-                    <img src="images/Re_StandUp.png" alt="다시 일어선 외뚜기 아이콘" class="tier-icon">
-                    다시 일어선
-                </span>
-                <span class="rank-name">불사조외뚜기</span>
-                <span class="rank-points">8,500 P</span>
-            </li>
-            <li class="ranking-item" data-tier="reconnect">
-                <span class="rank-num">2</span> 
-                <span class="tier-badge tier-reconnect">
-                    <img src="images/Meet_again.png" alt="다시 만난 외뚜기 아이콘" class="tier-icon">
-home                    다시 만난
-                </span>
-                <span class="rank-name">다시일어서는중</span>
-                <span class="rank-points">3,850 P</span>
-            </li>
-            <li class="ranking-item" data-tier="walk">
-                <span class="rank-num">3</span>
-                <span class="tier-badge tier-walk">
-                    <img src="images/Walking.png" alt="산책하는 외뚜기 아이콘" class="tier-icon">
-                    산책하는
-                </span>
-                <span class="rank-name">따뜻한햇살</span>
-                <span class="rank-points">2,920 P</span>
-            </li>
-            <li class="ranking-item" data-tier="walk">
-                <span class="rank-num">4</span>
-                <span class="tier-badge tier-walk">
-                    <img src="images/Walking.png" alt="산책하는 외뚜기 아이콘" class="tier-icon">
-                    산책하는
-                </span>
-                <span class="rank-name">오늘도한걸음</span>
-                <span class="rank-points">2,510 P</span>
-            </li>
-            <li class="ranking-item" data-tier="step">
-                <span class="rank-num">5</span>
-                <span class="tier-badge tier-step">
-                    <img src="images/One_Step.png" alt="한 걸음 외뚜기 아이콘" class="tier-icon">
-                    한 걸음
-                </span>
-                <span class="rank-name">부산갈매기</span>
-                <span class="rank-points">1,720 P</span>
-            </li>
-            <li class="ranking-item" data-tier="step">
-                <span class="rank-num">6</span>
-                <span class="tier-badge tier-step">
-                    <img src="images/One_Step.png" alt="한 걸음 외뚜기 아이콘" class="tier-icon">
-                    한 걸음
-                </span>
-                <span class="rank-name">천천히걷기</span>
-                <span class="rank-points">1,450 P</span>
-            </li>
-            <li class="ranking-item" data-tier="door">
-                <span class="rank-num">7</span>
-                <span class="tier-badge tier-door">
-                    <img src="images/Door_front.png" alt="문 앞의 외뚜기 아이콘" class="tier-icon">
-                    문 앞의
-                </span>
-                <span class="rank-name">책읽는고양이</span>
-                <span class="rank-points">880 P</span>
-            </li>
-             <li class="ranking-item" data-tier="room">
-                <span class="rank-num">8</span>
-                <span class="tier-badge tier-room">
-                    <img src="images/Room_in.png" alt="방 안의 외뚜기 아이콘" class="tier-icon">
-                    방 안의
-                </span>
-                <span class="rank-name">안녕바다</span>
-                <span class="rank-points">410 P</span>
-            </li>
-            <li class="ranking-item" data-tier="room">
-                <span class="rank-num">9</span>
-                <span class="tier-badge tier-room">
-                    <img src="images/Room_in.png" alt="방 안의 외뚜기 아이콘" class="tier-icon">
-                    방 안의
-                </span>
-                <span class="rank-name">시작이반</span>
-                <span class="rank-points">250 P</span>
-            </li>
-        </ul>
+      <div class="filter-controls">
+        <select id="tier-filter" class="filter-select">
+          <option value="all">전체 여정 보기</option>
+          <option value="stood_up">다시 일어선 외뚜기</option>
+          <option value="reconnect">다시 만난 외뚜기</option>
+          <option value="walk">산책하는 외뚜기</option>
+          <option value="step">한 걸음 외뚜기</option>
+          <option value="door">문 앞의 외뚜기</option>
+          <option value="room">방 안의 외뚜기</option>
+        </select>
+        <input type="text" class="search-bar" placeholder="유저 닉네임을 검색해 보세요">
+      </div>
+
+      <table class="ranking-table-new">
+        <thead>
+          <tr>
+            <th>순위</th>
+            <th>유저 정보</th>
+            <th>여정 단계</th>
+            <th>누적 포인트</th>
+          </tr>
+        </thead>
+        <tbody id="ranking-tbody">
+          <tr data-tier="stood_up">
+            <td>1</td>
+            <td>
+              <img src="images/Re_StandUp.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">불사조외뚜기</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-stood_up">
+                <img src="images/Re_StandUp.png" alt="아이콘" class="tier-icon">
+                다시 일어선
+              </div>
+            </td>
+            <td>8,500 P</td>
+          </tr>
+          <tr data-tier="reconnect">
+            <td>2</td>
+            <td>
+              <img src="images/Meet_again.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">다시일어서는중</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-reconnect">
+                <img src="images/Meet_again.png" alt="아이콘" class="tier-icon">
+                다시 만난
+              </div>
+            </td>
+            <td>3,850 P</td>
+          </tr>
+          <tr data-tier="walk">
+            <td>3</td>
+            <td>
+              <img src="images/Walking.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">따뜻한햇살</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-walk">
+                <img src="images/Walking.png" alt="아이콘" class="tier-icon">
+                산책하는
+              </div>
+            </td>
+            <td>2,920 P</td>
+          </tr>
+          <tr data-tier="walk">
+            <td>4</td>
+            <td>
+              <img src="images/Walking.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">오늘도한걸음</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-walk">
+                <img src="images/Walking.png" alt="아이콘" class="tier-icon">
+                산책하는
+              </div>
+            </td>
+            <td>2,510 P</td>
+          </tr>
+          <tr data-tier="step">
+            <td>5</td>
+            <td>
+              <img src="images/One_Step.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">부산갈매기</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-step">
+                <img src="images/One_Step.png" alt="아이콘" class="tier-icon">
+                한 걸음
+              </div>
+            </td>
+            <td>1,720 P</td>
+          </tr>
+          <tr data-tier="step">
+            <td>6</td>
+            <td>
+              <img src="images/One_Step.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">천천히걷기</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-step">
+                <img src="images/One_Step.png" alt="아이콘" class="tier-icon">
+                한 걸음
+              </div>
+            </td>
+            <td>1,450 P</td>
+          </tr>
+          <tr data-tier="door">
+            <td>7</td>
+            <td>
+              <img src="images/Door_front.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">책읽는고양이</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-door">
+                <img src="images/Door_front.png" alt="아이콘" class="tier-icon">
+                문 앞의
+              </div>
+            </td>
+            <td>880 P</td>
+          </tr>
+          <tr data-tier="room">
+            <td>8</td>
+            <td>
+              <img src="images/Room_in.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">안녕바다</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-room">
+                <img src="images/Room_in.png" alt="아이콘" class="tier-icon">
+                방 안의
+              </div>
+            </td>
+            <td>410 P</td>
+          </tr>
+          <tr data-tier="room">
+            <td>9</td>
+            <td>
+              <img src="images/Room_in.png" alt="프로필" class="rank-list-profile">
+              <span class="rank-list-name">시작이반</span>
+            </td>
+            <td>
+              <div class="tier-badge tier-room">
+                <img src="images/Room_in.png" alt="아이콘" class="tier-icon">
+                방 안의
+              </div>
+            </td>
+            <td>250 P</td>
+          </tr>
+        </tbody>
+      </table>
 
     </div>
   </main>
 
   <footer class="main-footer">
     <div class="footer-container">
-        <div class="social-links">
-                <a href="#" class="social-icon facebook">F</a>
-                <a href="#" class="social-icon blog">Blog</a>
-                <a href="#" class="social-icon channel">Ch</a>
-            </div>
+      <div class="social-links">
+        <a href="#" class="social-icon facebook">F</a>
+        <a href="#" class="social-icon blog">Blog</a>
+        <a href="#" class="social-icon channel">Ch</a>
+      </div>
       <p class="copyright">Copyright&copy;2025 by BSORI HealingAlgorithm</p>
     </div>
   </footer>
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>

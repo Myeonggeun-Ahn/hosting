@@ -1,15 +1,19 @@
 /* --- 기본 스타일 초기화 --- */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
-    background-color: #ffffff; /* 기본 배경 흰색 */
+    background-color: #ffffff;
+    /* 기본 배경 흰색 */
     color: #333;
     -webkit-font-smoothing: antialiased;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -31,44 +35,48 @@ ul {
     width: 100%;
     background-color: #FFFEFA;
     border-bottom: 2px solid #000000;
-    padding: 8px 40px; /* 상하 여백 조절 */
+    padding: 8px 40px;
+    /* 상하 여백 조절 */
 
 
 }
 
 .header-container {
-    max-width: 1300px; /* 콘텐츠 최대 너비 고정 */
-    margin: 0 auto; /* 중앙 정렬 */
+    max-width: 1300px;
+    /* 콘텐츠 최대 너비 고정 */
+    margin: 0 auto;
+    /* 중앙 정렬 */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo-text-link {
-  font-size: 15px;
-  display: flex;
+    font-size: 15px;
+    display: flex;
 }
 
 .front-text {
-  color: #003366;
+    color: #003366;
 }
 
 .back-text {
-  color: #FF8C00;
+    color: #FF8C00;
 }
 
 .logo-img {
-  height: 45px; /* 로고 크기 */
-  width: auto;
-  margin-top: 10px;
+    height: 45px;
+    /* 로고 크기 */
+    width: auto;
+    margin-top: 10px;
 }
 
 .main-text {
-  font-size: 23px;
-  margin-left: 12px;
-  margin-right: 85px;
-  font-weight: 800;
-  font-style: italic;
+    font-size: 23px;
+    margin-left: 12px;
+    margin-right: 85px;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .main-nav {
@@ -78,87 +86,93 @@ ul {
 
 .main-nav ul {
     display: flex;
-    gap: 65px; /* 메뉴 간격 */
+    gap: 65px;
+    /* 메뉴 간격 */
 }
 
 .main-nav a {
-    font-size: 17px; /* 1번 이미지와 유사한 크기 */
+    font-size: 17px;
+    /* 1번 이미지와 유사한 크기 */
     font-weight: 700;
     color: #333;
 }
 
 .menu1 {
-  transition: transform 0.1s ease-in-out;
-  display: inline-block;
+    transition: transform 0.1s ease-in-out;
+    display: inline-block;
 }
 
 .menu1:hover {
-  color: blue;
-  transform: scale(1.05);
+    color: blue;
+    transform: scale(1.05);
 }
 
 .menu2 {
-  transition: transform 0.1s ease-in-out;
-  display: inline-block;
+    transition: transform 0.1s ease-in-out;
+    display: inline-block;
 }
 
 .menu2:hover {
-  color: blue;
-  transform: scale(1.05);
+    color: blue;
+    transform: scale(1.05);
 }
 
 .menu3 {
-  transition: transform 0.1s ease-in-out;
-  display: inline-block;
+    transition: transform 0.1s ease-in-out;
+    display: inline-block;
 }
 
 .menu3:hover {
-  color: blue;
-  transform: scale(1.05);
+    color: blue;
+    transform: scale(1.05);
 
 }
 
 .menu4 {
-  transition: transform 0.1s ease-in-out;
-  display: inline-block;
+    transition: transform 0.1s ease-in-out;
+    display: inline-block;
 }
 
 .menu4:hover {
-  color: blue;
-  transform: scale(1.05);
+    color: blue;
+    transform: scale(1.05);
 }
 
 .menu5 {
-  transition: transform 0.1s ease-in-out;
-  display: inline-block;
+    transition: transform 0.1s ease-in-out;
+    display: inline-block;
 }
 
 
 .menu5:hover {
-  color: blue;
-  transform: scale(1.05);
+    color: blue;
+    transform: scale(1.05);
 }
 
 .user-links a {
     font-size: 14px;
     color: #555;
-    margin-left: 20px; /* 로그인/회원가입 간격 */
+    margin-left: 20px;
+    /* 로그인/회원가입 간격 */
 }
 
 /* --- [2번 이미지] 히어로 섹션 + 붉은색 버튼 스타일 --- 
 */
 .hero-section {
-    background-color: #fde8c5; /* 1번 이미지의 베이지 배경색 */
-    padding: 80px 40px;
-    border-bottom: 2px solid #000000;
+    background-color: #fde8c5;
+    /* 1번 이미지의 베이지 배경색 */
+    padding: 0px 40px;
+    height: 584.5px;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1300px; /* 콘텐츠 최대 너비 (헤더와 동일) */
-    margin: 0 auto; /* 중앙 정렬 */
+    max-width: 1300px;
+    /* 콘텐츠 최대 너비 (헤더와 동일) */
+    margin: 0 auto;
+    /* 중앙 정렬 */
     gap: 30px;
 }
 
@@ -170,6 +184,7 @@ ul {
 .hero-text h1 {
     font-size: 42px;
     font-weight: 900;
+    color: #5B3D34;
     margin: 0;
     margin-bottom: 15px;
 }
@@ -177,59 +192,68 @@ ul {
 .hero-text h2 {
     font-size: 42px;
     font-weight: 900;
+    color: #5B3D34;
     margin: 0;
     margin-bottom: 30px;
 }
 
 .hero-text .quote {
     font-size: 20px;
-    color: #444;
+    color: #B23F3A;
     font-style: italic;
     margin: 6px 0;
     line-height: 1.7;
 }
 
 .hero-text .description {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 21px;
+    font-weight: 900;
     margin-top: 50px;
+    color: #836054;
 }
 
 /* [2번 이미지]의 붉은색 버튼 스타일 */
 .cta-button {
     display: inline-block;
-    background-color: #dd5045; /* 2번 이미지의 붉은색 */
+    background-color: #dd5045;
+    /* 2번 이미지의 붉은색 */
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
     padding: 12px 24px;
-    border-radius: 5px; /* 살짝 둥근 모서리 */
+    border-radius: 5px;
+    /* 살짝 둥근 모서리 */
     margin-top: 2px;
     transition: background-color 0.2s, transform 0.2s;
 }
 
 .cta-button:hover {
-    background-color: #c9302c; /* 호버 시 조금 더 진하게 */
+    background-color: #c9302c;
+    /* 호버 시 조금 더 진하게 */
     transform: translateY(-2px);
 }
 
 .hero-image {
-    flex-basis: 45%;
+    margin-top: 61px;
+    margin-bottom: 61px;
+    flex-basis: 40%;
     text-align: right;
 }
 
 .hero-image img {
-    max-width: 110%;
-    height: auto;
-    border-radius: 12px; /* 일러스트 모서리 둥글게 */
+  border: 20px solid #FFFFFF;
+    height: 465px;
+    /* 일러스트 모서리 둥글게 */
 }
 
 
 /* --- [3번 이미지] 카드 섹션 스타일 --- 
 */
 .features-section {
-    background-color: #ffffff; /* 흰색 배경 */
+    background-color: #ffffff;
+    /* 흰색 배경 */
     padding: 80px 40px;
+    border-top: 2px solid #000000;
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -237,13 +261,16 @@ ul {
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around; /* 카드 균등 배분 */
-    gap: 30px; /* 카드 사이 간격 */
+    justify-content: space-around;
+    /* 카드 균등 배분 */
+    gap: 30px;
+    /* 카드 사이 간격 */
 }
 
 .feature-card {
     flex: 1;
-    max-width: 350px; /* 카드 최대 너비 */
+    max-width: 350px;
+    /* 카드 최대 너비 */
     background-color: #f9f9f9;
     border: 1px solid #e9e9e9;
     border-radius: 12px;
@@ -254,13 +281,15 @@ ul {
 
 .feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card-icon {
-    height: 50px; /* 아이콘 이미지 크기 */
+    height: 50px;
+    font-size: 35px;
+    /* 아이콘 이미지 크기 */
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .feature-card h3 {
@@ -309,26 +338,40 @@ ul {
     font-weight: bold;
     transition: transform 0.2s;
 }
+
 .social-icon:hover {
     transform: scale(1.1);
 }
-.social-icon.facebook { background-color: #3b5998; }
-.social-icon.blog { background-color: #03C75A; }
-.social-icon.channel { background-color: #FEE500; color: #3C1E1E; }
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.blog {
+    background-color: #03C75A;
+}
+
+.social-icon.channel {
+    background-color: #FEE500;
+    color: #3C1E1E;
+}
 
 .copyright {
     color: #777;
     font-size: 14px;
 }
 
-/* --- ranking page --- */
+/* --- [추가] --- */
 
 /* 메인 콘텐츠 영역 (모든 서브페이지에 적용) */
 .page-container {
-    max-width: 1100px; /* index의 콘텐츠 폭과 맞추는 것이 좋습니다 */
+    max-width: 1300px;
+    /* index의 콘텐츠 폭과 맞추는 것이 좋습니다 */
     margin: 0 auto;
-    padding: 70px 40px; /* 페이지 상하 여백 */
-    min-height: 60vh; /* 콘텐츠가 적어도 최소 높이를 갖도록 함 */
+    padding: 30px 40px;
+    /* 페이지 상하 여백 */
+    min-height: 60vh;
+    /* 콘텐츠가 적어도 최소 높이를 갖도록 함 */
 }
 
 /* 페이지 공통 큰 제목 */
@@ -368,14 +411,16 @@ ul {
     color: #333;
 }
 
-.content-box p, .content-box li {
+.content-box p,
+.content-box li {
     font-size: 17px;
     line-height: 1.8;
     color: #444;
 }
 
 .content-box ul {
-    list-style: disc; /* 불릿 스타일 */
+    list-style: disc;
+    /* 불릿 스타일 */
     padding-left: 20px;
 }
 
@@ -403,7 +448,7 @@ ul {
 
 .action-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .action-card .card-icon {
@@ -422,53 +467,16 @@ ul {
     color: #666;
     line-height: 1.6;
     margin: 0 0 20px 0;
-    flex-grow: 1; /* p태그가 남은 공간 차지 */
+    flex-grow: 1;
+    /* p태그가 남은 공간 차지 */
 }
 
 .action-card .card-points {
     font-size: 18px;
     font-weight: 700;
-    color: #d9534f; /* 메인페이지 버튼 색상과 통일 */
+    color: #d9534f;
+    /* 메인페이지 버튼 색상과 통일 */
 }
-
-/* --- '실천 랭킹' 페이지용 테이블 --- */
-.ranking-table {
-    width: 100%;
-    border-collapse: collapse; /* 테두리 한 줄로 */
-    font-size: 17px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden; /* 둥근 모서리 적용 */
-}
-
-.ranking-table th, .ranking-table td {
-    padding: 16px 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-.ranking-table th {
-    background-color: #f9f9f9;
-    font-weight: 700;
-    color: #333;
-}
-
-.ranking-table tr:last-child td {
-    border-bottom: none; /* 마지막 줄 밑줄 제거 */
-}
-
-.ranking-table td:nth-child(2) { /* 닉네임 */
-    text-align: left;
-    padding-left: 20px;
-}
-
-.ranking-table td:first-child { /* 순위 */
-    width: 10%;
-    font-weight: 700;
-    font-size: 20px;
-    color: #dd5045;
-}
-
 
 /* --- '즉석 상담' 페이지용 링크 버튼 --- */
 .counseling-links {
@@ -491,7 +499,7 @@ ul {
     background-color: #fff;
     border-color: #c0c0c0;
     transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .counseling-link-button h3 {
@@ -507,79 +515,319 @@ ul {
     margin: 0;
 }
 
-/* 티어 필터 탭 네비게이션 */
-.tier-nav {
+.top-rank-showcase {
     display: flex;
-    flex-wrap: wrap; /* 창이 좁아지면 줄바꿈 */
-    gap: 10px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
+    gap: 20px;
+    /* 카드 사이 간격 */
+    margin-bottom: 40px;
 }
 
-.tier-tab {
-    padding: 10px 18px;
-    font-size: 16px;
+.rank-card {
+    flex: 1;
+    /* 3개 카드가 공간 균등 분배 */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    position: relative;
+    /* 뱃지 위치 기준 */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rank-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.07);
+}
+
+.rank-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
     font-weight: 700;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+/* 1, 2, 3위 뱃지 색상 */
+.rank-1 .rank-badge {
+    background-color: #d9534f;
+}
+
+/* 메인 버튼 색상 */
+.rank-2 .rank-badge {
+    background-color: #5bc0de;
+}
+
+.rank-3 .rank-badge {
+    background-color: #5cb85c;
+}
+
+.rank-profile-img {
+    width: 100px;
+    /* 프로필 아이콘 크기 */
+    height: 100px;
+    border-radius: 50%;
+    /* 원형 */
+    border: 3px solid #f0f0f0;
+    margin: 15px 0 10px 0;
+}
+
+.rank-1 .rank-profile-img {
+    border-color: #d9534f;
+}
+
+.rank-2 .rank-profile-img {
+    border-color: #5bc0de;
+}
+
+.rank-3 .rank-profile-img {
+    border-color: #5cb85c;
+}
+
+.rank-username {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.rank-stats {
+    font-size: 15px;
     color: #555;
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.tier-tab:hover {
-    background-color: #e0e0e0;
-}
-
-/* 활성화된 탭 스타일 (index.html의 버튼 색상과 통일) */
-.tier-tab.active {
-    background-color: #dd5045;
-    color: #ffffff;
-}
-
-/* 새로운 랭킹 리스트 */
-.ranking-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.ranking-item {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 15px;
-    padding: 18px 10px;
-    border-bottom: 1px solid #f0f0f0;
-    transition: background-color 0.2s;
+}
+
+.rank-points {
+    font-weight: 600;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-select {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.search-bar {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23888' viewBox='0 0 16 16'%3e%3cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    /* 아이콘 위치 (왼쪽에서 12px) */
+    padding-left: 40px;
+    /* 텍스트가 아이콘을 덮지 않도록 왼쪽 여백 확보 */
+}
+
+.ranking-table-new {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    table-layout: fixed;
+    /* 헤더/본문 정렬을 맞추는 핵심 */
+}
+
+.ranking-table-new th,
+.ranking-table-new td {
+    padding: 16px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    /* 기본값 */
+    vertical-align: middle;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ranking-table-new th {
+    background-color: #f8f9fa;
+    font-weight: 700;
+    color: #333;
+}
+
+/* --- [컬럼별 정렬 설정] --- */
+
+/* 1. 순위 (왼쪽 그룹 - 중앙 정렬) */
+.ranking-table-new th:first-child,
+.ranking-table-new td:first-child {
+    width: 8%;
+    text-align: center;
+}
+
+.ranking-table-new td:first-child {
+    font-weight: 700;
+    font-size: 18px;
+    color: #555;
+}
+
+/* 2. 유저 정보 (왼쪽 그룹 - 왼쪽 정렬) */
+.ranking-table-new th:nth-child(2),
+.ranking-table-new td:nth-child(2) {
+    width: 57%;
+    text-align: left;
+}
+
+.ranking-table-new td:nth-child(2) {
+    font-weight: 700;
+    color: #222;
+}
+
+/* 3. 여정 단계 (오른쪽 그룹 - 오른쪽 정렬) */
+.ranking-table-new th:nth-child(3),
+.ranking-table-new td:nth-child(3) {
+    width: 25%;
+    text-align: center;
+}
+
+/* 4. 누적 포인트 (오른쪽 그룹 - 오른쪽 정렬) */
+.ranking-table-new th:last-child,
+.ranking-table-new td:last-child {
+    width: 20%;
+    text-align: center;
+}
+
+.ranking-table-new td:last-child {
+    font-weight: 600;
+}
+
+/* JS를 위한 .hidden 클래스 (tr에 적용) */
+tr.hidden {
+    display: none;
+}
+
+/* JS를 위한 .hidden 클래스 (tr에 적용) */
+tr.hidden {
+    display: none;
+}
+
+.rank-list-profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.rank-list-name {
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .tier-badge {
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 700;
     color: #333;
     padding: 4px 10px;
+    padding-right: 15px;
     border-radius: 5px;
     width: 180px;
     text-align: left;
     flex-shrink: 0;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     border: 1px solid #ddd;
 }
 
 /* 티어 아이콘 스타일 */
 .tier-icon {
-    width: 40px; /* 아이콘 크기 */
+    width: 40px;
+    /* 아이콘 크기 */
     height: 40px;
-    vertical-align: middle; /* 텍스트와 세로 정렬 */
+    vertical-align: middle;
+    /* 텍스트와 세로 정렬 */
+    flex-shrink: 0;
 }
 
-.tier-room { background-color: #ECEFF1; border-color: #B0BEC5; } 
-.tier-door { background-color: #FBE9E7; border-color: #D7CCC8; }
-.tier-step { background-color: #E8F5E9; border-color: #A5D6A7; }
-.tier-walk { background-color: #E3F2FD; border-color: #90CAF9; }
-.tier-reconnect { background-color: #FFFDE7; border-color: #FFEB3B; } 
-.tier-stood_up { background-color: #E0F2F7; border-color: #81D4FA; }
+.tier-room {
+    background-color: #ECEFF1;
+    border-color: #B0BEC5;
+}
+
+.tier-door {
+    background-color: #FBE9E7;
+    border-color: #D7CCC8;
+}
+
+.tier-step {
+    background-color: #E8F5E9;
+    border-color: #A5D6A7;
+}
+
+.tier-walk {
+    background-color: #E3F2FD;
+    border-color: #90CAF9;
+}
+
+.tier-reconnect {
+    background-color: #FFFDE7;
+    border-color: #FFEB3B;
+}
+
+.tier-stood_up {
+    background-color: #E0F2F7;
+    border-color: #81D4FA;
+}
+
+.store-card p {
+    flex-grow: 0; /* p태그가 늘어나지 않도록 */
+    margin-bottom: 15px;
+}
+
+.store-card-image {
+    width: 100%;
+    height: 180px; /* 이미지 높이 통일 */
+    object-fit: contain; /* 이미지 비율 유지 */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+.store-card-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #d9534f; /* 메인 버튼 색상 */
+}
+
+.store-card-button {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #dd5045; /* 메인 버튼 색상 */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.store-card-button:hover {
+    background-color: #c9302c;
+}
+
+/* '준비중'인 버튼 스타일 */
+.store-card-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
