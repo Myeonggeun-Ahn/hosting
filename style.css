@@ -828,6 +828,6 @@ tr.hidden {
 
 /* '준비중'인 버튼 스타일 */
 .store-card-button:disabled {
-    background-color: #aaa;
+    background-color: #DC143C;
     cursor: not-allowed;
 }
